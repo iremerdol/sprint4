@@ -46,7 +46,7 @@
           <label for="projects">Projects:</label>
           <textarea id="projects" name="projects" rows="4"></textarea><br />
 
-          <button type="submit">Create CV</button>
+          <button id="nothing" type="submit">Create CV</button>
         </form>
       </div>
     </section>
@@ -56,5 +56,10 @@
         <p>&copy; 2024 CV Temple. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      document.getElementById("#nothing").addEventListener("click", function() {
+          // Do nothing
+      });
+  </script>
   </body>
 </html>
