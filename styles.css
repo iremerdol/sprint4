@@ -556,7 +556,7 @@ h2 {
   width: 100%;
   position: absolute;
   top: 0;
-  animation: scrollAnimation 10s linear infinite;
+  animation: scrollAnimation 25s linear infinite;
 }
 @keyframes scrollAnimation {
   0% {
