@@ -57,9 +57,9 @@
       </div>
     </footer>
     <script>
-      document.getElementById("nothing").addEventListener("click", function() {
-          // Do nothing
-      });
+      document.getElementById("nothing").addEventListener("click", function(event) {
+        event.preventDefault();
+    });
   </script>
   </body>
 </html>
