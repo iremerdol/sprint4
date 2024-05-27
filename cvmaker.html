@@ -27,7 +27,7 @@
     <section class="cv-maker">
       <div class="container">
         <h2><b>CV Maker</b></h2>
-        <form action="#" method="post">
+        <form id="myForm" action="#" method="post">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required /><br />
 
@@ -46,7 +46,7 @@
           <label for="projects">Projects:</label>
           <textarea id="projects" name="projects" rows="4"></textarea><br />
 
-          <button id="nothing" type="submit">Create CV</button>
+          <button id="myButton" type="submit">Create CV</button>
         </form>
       </div>
     </section>
@@ -57,9 +57,13 @@
       </div>
     </footer>
     <script>
-      document.getElementById("nothing").addEventListener("click", function(event) {
-        event.preventDefault();
-    });
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();  // Prevent form submission
+        });
+
+        document.getElementById("myButton").addEventListener("click", function(event) {
+            // Do nothing
+        });
   </script>
   </body>
 </html>
