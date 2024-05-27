@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Maker - CV Temple</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cvmaker.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="main">
+          <!--  navigation bar  -->
+          <ul>
+            <li class="list-style-1"><a href="showcase.html">Showcase</a></li>
+            <li class="list-style-1"><a href="cvmaker.html">CV Maker</a></li>
+            <li class="list-style-1"><a href="index.html">Logout</a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" />
+        </div>
+      </div>
+    </header>
+
+    <section class="cv-maker">
+      <div class="container">
+        <h2><b>CV Maker</b></h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="surname" required /><br />
+
+          <label for="occupation">Occupation:</label>
+          <input type="text" id="occupation" name="occupation" required /><br />
+
+          <label for="department">Department (if university student):</label>
+          <input type="text" id="department" name="department" /><br />
+
+          <label for="internship">Internship:</label>
+          <input type="text" id="internship" name="internship" /><br />
+
+          <label for="projects">Projects:</label>
+          <textarea id="projects" name="projects" rows="4"></textarea><br />
+
+          <button type="submit">Create CV</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 CV Temple. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

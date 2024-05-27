@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin-bottom: 5%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  color: #fff;
+  padding-top: 20px;
+  min-height: 70px;
+  border-bottom: #ddd 1px solid;
+}
+
+header h1 {
+  padding-left: 21.5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-us {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: rgba(182, 116, 141, 0.466);
+}
+
+.contact-us label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us input[type="message"],
+.contact-us textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.contact-us button[type="submit"] {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments ul li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.mfp-content {
+  color: #7adb1e; /* Text color */
+  font-size: 40px; /* Font size */
+  text-align: center; /* Center align text */
+  padding-left: 30%;
+  width: fit-content;
+}
+
+.mfp-bg {
+  background: rgba(0, 0, 0, 0.8) !important; /* Darken the background */
+}

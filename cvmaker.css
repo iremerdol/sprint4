@@ -1,0 +1,28 @@
+.cv-maker {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: rgba(182, 116, 141, 0.466);
+}
+
+.cv-maker form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-maker form label {
+  margin-bottom: 5px;
+}
+
+.cv-maker form input[type="text"],
+.cv-maker form textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #fff; /* Set background color to white */
+}
+
+.cv-maker form button {
+  width: 150px;
+  margin-top: 10px;
+}

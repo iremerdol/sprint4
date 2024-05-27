@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - CV Temple</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="main">
+          <!--  navigation bar  -->
+          <ul>
+            <li class="list-style-1"><a href="index.html" id="current">Home</a></li>
+            <li class="list-style-1"><a href="about.html">About</a></li>
+            <li class="list-style-1"><a href="contactus.html">Contact-us</a></li>
+            <li class="list-style-1"><a href="login.html">Login</a></li>
+            <li class="list-style-1"><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <img src="images/logo.png">
+        </div>
+      </div>
+    </header>
+
+    <section class="login">
+      <div class="container">
+        <h2><b>Login</b></h2>
+        <form id="loginForm">
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Email" required />
+          <label for="password">Password:</label>
+          <input type="password" name="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 CV Temple. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        if (document.querySelector('input[name="email"]').checkValidity() && 
+            document.querySelector('input[name="password"]').checkValidity()) {
+          window.location.href = "showcase.html"; // Navigate to showcase.html
+        }
+      });
+    </script>
+  </body>
+</html>
